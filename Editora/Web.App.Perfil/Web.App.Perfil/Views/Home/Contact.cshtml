@@ -1,0 +1,41 @@
+﻿@model Web.App.Perfil.Models.ContatoViewModel
+
+@{
+    ViewBag.Title = "Contact";
+}
+
+
+<h2>Contato</h2>
+
+@if (ViewBag.Concluido != null)
+{
+    <p>Obrigado por seu cadastro, em breve enviamos os dados de compra</p>
+}
+
+else
+{
+    <p>Por favor, preenche isto direito</p>
+    <hr />
+    <form method="post">
+        <div class="from-group">
+            <label for="Nome" class="control-label">Nome:</label>
+            <input type="text" id="Nome" name="Nome" class="form-control" />
+        </div>
+
+        <div class="from-group">
+            <label for="Email" class="control-label">Email:</label>
+            <input type="text" id="Email" name="Email" class="form-control" />
+        </div>
+
+        <div class="from-group">
+            <label for="Mensagem" class="control-label">Mensagem:</label>
+            <input type="text" id="Mensagem" name="Mensagem" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <input type="submit" class="btn btn-default" value="Enviar">
+        </div>>
+
+    </form>
+
+} 
