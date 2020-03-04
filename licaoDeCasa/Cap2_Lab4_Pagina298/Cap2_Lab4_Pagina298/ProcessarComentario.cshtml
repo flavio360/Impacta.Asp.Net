@@ -1,0 +1,46 @@
+﻿@using Cap2_Lab4_Pagina298.APP
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="~/Estilo.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <a href="~/default.cshtml">
+            <h1>Pagina principal </h1>
+            
+        </a>
+    </header>
+
+    <section>
+        @if (!IsPost)
+        {
+            Response.Redirect("~/PaginaComentario.cshtml");
+        }
+        else
+        {
+            string nome = Request.Form["nome"];
+            string comentario = Request.Form["comentario"];
+            string email = Request.Form["email"];
+
+            if (string.IsNullOrWhiteSpace(nome) || string.IsNullOrWhiteSpace(comentario))
+            {
+                Response.Redirect("~/PaginaComentario.cshtml");
+            }
+
+            else
+            {
+                WebApp.ComentarioIncluir(nome, comentario, email);
+            }
+        }
+
+        <p>Obrigatio pelo comentario</p>
+
+        <a href="~/default.cshtml">voltar pagina principal</a>
+        <a href="~/ComentarioLista.cshtml">Ver comentarios</a>
+
+    </section>
+
+</body>
+</html>

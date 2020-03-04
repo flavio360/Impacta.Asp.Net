@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>FOCO NA AULA, NO ESTUDO, CRESCIMENTO, MAIS DINHEIRO!!!</title>
+    <link href="~/Estilo.css" rel="stylesheet" />
+
+    <script>
+
+        function exibirEsconderElemento(elementoId)
+        {
+            var elemento = document.getElementById(elementoId);
+            if (elemento.style.display == "none") {
+                elemento.style.display = "block";
+            }
+            else {
+                elemento.style.display = "none";
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div>
+        <p class="pag_default">Aqui é um paragrafo delimitado e definido pela tag < p >, esta dentro de uma div, que é um container, delimitada pela tag < div >, em ambos existe abertura e fechamento </p>
+    </div>
+
+    <header>FOCO NA AULA, NO ESTUDO, CRESCIMENTO É MAIS DINHEIRO!!!</header>
+
+    <div>
+        <p class="comentario">a tag < dl > é descrição da lista, nome referência ao conjunto agrupado por ela <br> </p>
+        <dl>
+            <dt>
+                <a href="javascript:exibirEsconderElemento('ddClient')">   Genero de jogo   </a>
+            </dt>
+
+            <dd id="ddClient" style="display:none">
+                <a href="teste"> <ul class="estiloLista">Acão </ul> </a>
+                <ul class="estiloLista">Aventura</ul>
+                <ul>Terror</ul>
+                <ul>Guerra</ul>
+                <ul>Corrida</ul>
+                <ul>Esportes</ul>
+            </dd>
+
+            <dt>
+                <a href="javascript:exibirEsconderElemento('ddProdutora')"> Produtora</a>
+            </dt>
+
+            <dd id="ddProdutora" style="display:none">
+                <ul>EA</ul>
+                <ul>Campcom</ul>
+                <ul>Konami</ul>
+                <ul>Sony</ul>
+            </dd>
+        </dl>
+    </div>
+
+    <h2>
+        <p>
+            <a href="~/PaginaComentario.cshtml">Deixe seu comentário</a>
+        </p>
+    </h2>
+   
+    <div>
+        <hr />
+        <footer>Fevereio de 2020</footer>
+    </div>
+</body>
+
+</html>

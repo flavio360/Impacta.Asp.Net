@@ -1,0 +1,14 @@
+﻿@Model List<String>
+
+    @{
+        ViewBag.Title = "Mensagem";
+    }
+
+    <h2>Mensagem</h2>
+
+    @foreach (string arquivo in ViewBag.msgRecebida)
+    {
+        <div>@arquivo</div>
+        @Html.Hidden("CPF", arquivo)
+    }
+

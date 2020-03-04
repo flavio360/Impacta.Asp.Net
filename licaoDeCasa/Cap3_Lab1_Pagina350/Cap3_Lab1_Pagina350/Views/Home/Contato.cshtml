@@ -1,0 +1,40 @@
+﻿@model Cap3_Lab1_Pagina350.Models.ContatoViewModel
+
+@{
+    ViewBag.Title = "Contato";
+}
+
+<h2>Contato</h2>
+
+@if (ViewBag.Concluido)
+{
+    <p>Obrigado pelo contato, em breve retornarei! </p>
+}
+else
+{
+    <p>Por favor, preencher o formulário abaixo!</p>
+    <hr/>
+    <form method="post">
+
+        <div class="form-group">
+            <label for="Nome" class="control-label">Nome</label>
+            <input type="text" id="Nome" name="Nome" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="Email" class="control-label">E-mail</label>
+            <input type="text" id="Email" name="Email" class="form-control"/>
+        </div>
+
+        <div class="form-group">
+            <label for="Menssagem" class="control-label">Menssagem</label>
+            <input type="text" id="Menssagem" name="Menssagem" class="form-control"/>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" class="btn btn-default" value="Enviando" />
+        </div>
+
+    </form>
+}
+
