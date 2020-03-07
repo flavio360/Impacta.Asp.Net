@@ -23,7 +23,7 @@ namespace Cap05_Lab1_Pag470
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/bootswatch/Yeti/bootstrap.css",
                       "~/Content/site.css"));
         }
     }
