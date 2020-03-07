@@ -21,9 +21,19 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Destinos para Ir", "DestinoListagem", "Admin")</li>
-                    <li>@Html.ActionLink("Administração", "DestinoNovo", "Admin")</li>
-                    <li>@Html.ActionLink("Estou testando", "MinhaView", "Admin")</li>
+                    <li>@Html.ActionLink("Gerenciar Destinos", "DestinoListagem", "Admin")</li>
+                    <li>@Html.ActionLink("Gravar Novo Destino", "DestinoNovo", "Admin")</li>
+                    <li>@Html.ActionLink("Destinos", "Destinos", "ViagensOnLine")</li>
+                    
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        <li>@Html.ActionLink("Login", "Login", "Admin")</li>
+                    }
+                    else
+                    {
+                        <li>@Html.ActionLink("Logout", "Logout", "Admin")</li>  
+                    }
+
                     @*<li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
                 </ul>
             </div>

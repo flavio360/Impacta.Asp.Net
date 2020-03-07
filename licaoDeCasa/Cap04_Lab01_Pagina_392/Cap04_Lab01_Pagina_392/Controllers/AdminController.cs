@@ -6,18 +6,26 @@ using System.Web.Mvc;
 using System.IO;
 using Cap04_Lab01_Pagina_392.Db;
 using Cap04_Lab01_Pagina_392.Models;
+using System.Security.Claims;
 
 namespace Cap04_Lab01_Pagina_392.Controllers
 {
+    [Authorize]
     public class AdminController : Controller
     {
         private const string ActionDestinoListagem = "DestinoListagem";
+        private const string ActionDestinoNovo = "DestinoNovo";
+        private const string ActionInicio = "Inicio";
         // GET: Admin
-
+        public ActionResult Inicio()
+        {
+            return View();
+            
+        }
 
         public ActionResult DestinoNovo()
         {
-            return View();
+            return View("DestinoNovo");
         }
 
         //
@@ -46,6 +54,7 @@ namespace Cap04_Lab01_Pagina_392.Controllers
         //
         // Gravar Novo Destino
         //
+       
         [HttpPost]
         public ActionResult DestinoNovo(Destino destino)
         {
@@ -82,7 +91,7 @@ namespace Cap04_Lab01_Pagina_392.Controllers
 
 
         }
-
+       
         public ActionResult MinhaView()
         {
             return View();
@@ -90,6 +99,7 @@ namespace Cap04_Lab01_Pagina_392.Controllers
 
         }
 
+       // [Authorize]
         public ActionResult DestinoListagem()
         {
             List<Destino> lista = null;
@@ -100,7 +110,8 @@ namespace Cap04_Lab01_Pagina_392.Controllers
 
             return View(lista);
         }
-        //alterar a imagem
+
+        //alterar a imagem        
         [HttpGet]
         public ActionResult DestinoAlterar(int id)
         {
@@ -149,6 +160,63 @@ namespace Cap04_Lab01_Pagina_392.Controllers
                 }
             }
             return RedirectToAction(ActionDestinoListagem);
+        }
+
+
+        //Login
+        [AllowAnonymous]
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+
+        [AllowAnonymous]
+        [HttpPost]
+        public ActionResult Login(string nome, string senha)
+        {
+            if (string.IsNullOrEmpty(nome))
+            {
+                ViewBag.Mensagem = "Digite o nome";
+                return View();
+            }
+            if (string.IsNullOrEmpty(senha))
+            {
+                ViewBag.Mensagem = "Digite o senha";
+                return View();
+            }
+            if (nome != "admin" && senha != "admin")
+            {
+                @ViewBag.Mensagem = "Usuário ou senha inválida";
+                return View();
+            }
+
+
+            Claim[] claims = new Claim[3];
+            claims[0] = new Claim(ClaimTypes.Name, "Administrador");
+            claims[1] = new Claim(ClaimTypes.Role, "admin");
+            claims[2] = new Claim(ClaimTypes.NameIdentifier, "admin");
+
+            //Nome para identificar
+            string nomeAutenticacao = "AppViagensOnlineCookie";
+
+     
+            ClaimsIdentity identity = new ClaimsIdentity(claims, nomeAutenticacao);
+
+            Request.GetOwinContext().Authentication.SignIn(identity);
+
+            //Redireciona para a pasta destinos
+           // return RedirectToAction("DestinoNovo");
+            return RedirectToAction(ActionInicio);
+            //return View("DestinoListagem");
+        }
+
+
+        public ActionResult Logout()
+        {
+            Request.GetOwinContext().Authentication.SignOut();
+            Session.Abandon();
+            return RedirectToAction("Login");
         }
     }
 

@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Cap04_Lab01_Pagina_392.Models.Destino>
+
+@{
+    ViewBag.Title = "Destinos";
+}
+
+<h2>Destinos</h2>
+
+@foreach (var item in Model)  //Model referencia ao que e qual origem? 
+{
+<div class="destinos-box">
+    <div>
+        <img src=" ~/imagens/@item.Foto" />
+    </div>
+
+    <div>
+        @Html.DisplayFor(modelItem => item.Nome)
+    </div>
+
+    <div>
+        @Html.DisplayFor(modelItem => item.Cidade)
+    </div>
+
+    <div>
+        @Html.DisplayFor(modelItem => item.Pais)
+    </div>
+</div>
+}
+
+<div style="clear:both"> </div>
