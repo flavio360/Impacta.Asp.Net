@@ -2,20 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Cap05_Lab1_Pag470.Models;
-using Cap05_Lab1_Pag470;
-using System.IO;
-using System.Text;
 
-namespace Cap05_Lab1_Pag470.Classes
+namespace Cap05_Lab1_Pag470.Models
 {
-    public class RotinasWeb
+    public class Util
     {
-        public bool a;
-        public string CPFvalidar;
-
-        
-        public bool ValidarCPF(string txt)
+        public static bool ValidarCPF(string txt)
         {
 
             //txt = txt.RemoverCaracteresEspeciais();
@@ -80,7 +72,9 @@ namespace Cap05_Lab1_Pag470.Classes
             for (int i = 0; i < regressivo; i++)
             {
                 validaCPF = validaCPF + digiCPF[i];
+
             }
+
 
             if (txt == validaCPF)
             {
@@ -89,33 +83,10 @@ namespace Cap05_Lab1_Pag470.Classes
 
             return false;
         }
-        public static void ContatoGravar(ContatoViewModel contato)
-        {
-            
-            //VALIDAR CPF INFORMADO NO CAMPO
-
-
-            if (contato.CPF != string.Empty)
-                {
-               
-                }
-    
-
-
-            string arquivo = HttpContext.Current.Server.MapPath("~/App_Data/Contatos.txt");
-
-            using (var sw = new StreamWriter(arquivo, true, Encoding.UTF8))
-            {
-                sw.WriteLine(DateTime.Now);
-                sw.WriteLine(contato.Nome);
-                sw.WriteLine(contato.Email);
-                sw.WriteLine(contato.Assunto);
-                sw.WriteLine(contato.Mensagem);
-                sw.WriteLine(contato.CPF);
-                sw.WriteLine(new string('-', 30));
-            }
-        }
-
         
+        //public RemoverCaracteresEspeciais(string text)
+        //{
+        //    text.Replace(",", "").Replace("-", "");
+        //}
     }
 }
