@@ -12,6 +12,5 @@ namespace Cap05_Lab1_Pag470.Models
         public string Assunto { get; set; }
         public string Mensagem { get; set; }
         public string CPF { get; set; }
-
     }
 }
