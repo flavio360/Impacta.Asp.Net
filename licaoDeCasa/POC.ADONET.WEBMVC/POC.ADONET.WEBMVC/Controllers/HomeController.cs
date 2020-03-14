@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using POC.ADONET.BLL;
+using POC.ADONET.MODELS;
 
 namespace POC.ADONET.WEBMVC.Controllers
 {
@@ -11,6 +13,17 @@ namespace POC.ADONET.WEBMVC.Controllers
         public ActionResult Index()
         {
             return View();
+        }
+
+        public ActionResult TodosLivros()
+        {
+            LivrosBLL livroBLL = new LivrosBLL();
+
+            var lista = livroBLL.BuscarTodosLivros();
+
+            //RETORNA LISTA TIPADA DE LIVROS
+            //OBTIDOS PELA CAMADA BLL (BUSINES LAYER)
+            return View(lista);
         }
 
         public ActionResult About()

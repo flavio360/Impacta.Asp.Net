@@ -16,18 +16,18 @@ namespace POC.ADONET.DAL
         #region Variavel com string de conexão
         //ATRIBUI UMA STRING CONEXÃO
         String stringConnection = "Data Source=3P47_14;" +
-                                  "Initial Catalog=LivraiaGames;" +
+                                  "Initial Catalog=pubs;" +
                                   "User ID=sa;Password=Imp@ct@";
         #endregion
 
         #region Adiciona dados cliente a DB
+
         public bool Add(string nome, string email, string observacao = "")
         {
             try
             {
                 //verifica se a instancia é valida
                 CriarInstanciaRepoDB();
-
 
                 ////ATRIBUI UMA STRING CONEXÃO
                 //repoDB.Conn.ConnectionString = "Data Source=3P47_14;" +
@@ -98,9 +98,7 @@ namespace POC.ADONET.DAL
             {
                 repoDB.fecharConexao();
             }
-            return false;
-
-
+            return retorno > 0;
         }
         #endregion
 

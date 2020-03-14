@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.TESTE.UNITARIO", "POC.T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.ADONET.MODELS", "POC.ADONET.MODELS\POC.ADONET.MODELS.csproj", "{D4BD9130-FCE7-4B41-8790-9FF59FF23771}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.ADONET.BLL", "POC.ADONET.BLL\POC.ADONET.BLL.csproj", "{EF8BE854-C6A6-4268-B440-86AA7695F9D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D4BD9130-FCE7-4B41-8790-9FF59FF23771}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4BD9130-FCE7-4B41-8790-9FF59FF23771}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4BD9130-FCE7-4B41-8790-9FF59FF23771}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF8BE854-C6A6-4268-B440-86AA7695F9D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF8BE854-C6A6-4268-B440-86AA7695F9D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF8BE854-C6A6-4268-B440-86AA7695F9D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF8BE854-C6A6-4268-B440-86AA7695F9D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
