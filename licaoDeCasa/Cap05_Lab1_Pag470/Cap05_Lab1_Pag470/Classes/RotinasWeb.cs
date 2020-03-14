@@ -16,6 +16,13 @@ namespace Cap05_Lab1_Pag470.Classes
             bool a;
             try
             {
+                
+                foreach (var item in contato)
+                {
+                    Util.RemoverCaracteresEspeciais(item);
+                }
+                
+
                 #region//VALIDAR CPF INFORMADO NO CAMPO
 
                 a = contato.CPF.Length == 11 && contato.CPF != string.Empty ? true : false;

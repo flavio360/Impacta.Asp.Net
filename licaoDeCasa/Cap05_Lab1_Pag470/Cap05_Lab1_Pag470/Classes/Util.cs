@@ -7,11 +7,11 @@ namespace Cap05_Lab1_Pag470.Models
 {
     public class Util
     {
+        #region Valida CPF
+        
         public static bool ValidarCPF(string txt)
         {
-
-            //txt = txt.RemoverCaracteresEspeciais();
-
+             
             char[] digiCPF = new char[10];
 
             int regressivo = 10;
@@ -43,7 +43,6 @@ namespace Cap05_Lab1_Pag470.Models
 
             #endregion
 
-
             regressivo = 11;
             soma = 0;
             conta = 0;
@@ -72,7 +71,6 @@ namespace Cap05_Lab1_Pag470.Models
             for (int i = 0; i < regressivo; i++)
             {
                 validaCPF = validaCPF + digiCPF[i];
-
             }
 
 
@@ -83,10 +81,12 @@ namespace Cap05_Lab1_Pag470.Models
 
             return false;
         }
-        
-        //public RemoverCaracteresEspeciais(string text)
-        //{
-        //    text.Replace(",", "").Replace("-", "");
-        //}
+        #endregion
+
+
+        public static void RemoverCaracteresEspeciais(string text)
+        {
+            text.Replace(",", "").Replace("-", "");
+        }
     }
 }

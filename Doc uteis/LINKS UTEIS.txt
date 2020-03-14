@@ -1,0 +1,20 @@
+Tabela de formatação do .ToString()
+https://docs.microsoft.com/pt-br/dotnet/standard/base-types/custom-numeric-format-strings
+https://docs.microsoft.com/pt-br/dotnet/standard/base-types/standard-numeric-format-strings
+
+RB TECH - canal no youtube
+https://www.youtube.com/watch?v=WVLhm1AMeYE
+
+por default, todo metodo é get, precisa definir post .
+
+*dataannotation c#
+ajuda na formtação e validação dos campos da página.
+
+*budleconfig
+mapeamento imports do jquery,scripts
+
+
+*privacidade hackeada
+Documentario 
+
+*html helper
