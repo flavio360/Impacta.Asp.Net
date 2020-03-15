@@ -14,10 +14,16 @@ namespace POC.ADONET.DAL
         Repository repoDB;
 
         #region Variavel com string de conexão
-        //ATRIBUI UMA STRING CONEXÃO
-        String stringConnection = "Data Source=3P47_14;" +
-                                  "Initial Catalog=pubs;" +
-                                  "User ID=sa;Password=Imp@ct@";
+
+        //ATRIBUI UMA STRING CONEXÃO PARA O CURSO
+        //String stringConnection = "Data Source=3P47_14;" +
+        //                          "Initial Catalog=pubs;" +
+        //                          "User ID=sa;Password=Imp@ct@";
+
+        //ATRIBUI UMA STRING CONEXÃO PARA O ESTUDO EM CASA
+        String stringConnection = @"Data Source=nflopes\sqlexpress;
+                                    Initial Catalog=pubs;
+                                    Integrated Security=True";
         #endregion
 
         #region Adiciona dados cliente a DB
@@ -57,10 +63,10 @@ namespace POC.ADONET.DAL
                 //se > 0 = true.
                 return (retorno > 0 ? true : false);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                throw ex;
             }
            finally
             {
@@ -150,7 +156,7 @@ namespace POC.ADONET.DAL
         #endregion
 
 
-        private void CriarInstanciaRepoDB()
+        public void CriarInstanciaRepoDB()
         {
             if (repoDB == null)
             {

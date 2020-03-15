@@ -16,7 +16,8 @@ namespace POC.ADONET.MODELS
         public string Tipo { get; set; }
 
         // o ? marca que esta propiedade aceita nulo;
-        public float? Preco { get; set; }
+        //public float? Preco { get; set; }
+        public double? Preco { get; set; }
         public string Resenha { get; set; }
     }
 }

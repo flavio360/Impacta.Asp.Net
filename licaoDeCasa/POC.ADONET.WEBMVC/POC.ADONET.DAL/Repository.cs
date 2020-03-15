@@ -43,5 +43,20 @@ namespace POC.ADONET.DAL
                 Conn.Close();
             }
         }
+
+        public static string   StringConnectar()
+        {
+            string stringConnection = string.Empty;
+
+            //ATRIBUI UMA STRING CONEXÃO PARA O CURSO
+            //String stringConnection = "Data Source=3P47_14;" +
+            //                          "Initial Catalog=pubs;" +
+            //                          "User ID=sa;Password=Imp@ct@";
+
+            //ATRIBUI UMA STRING CONEXÃO PARA O ESTUDO EM CASA
+            return stringConnection = @"Data Source=nflopes\sqlexpress;
+                                    Initial Catalog=pubs;
+                                    Integrated Security=True";
+        }
     }
 }

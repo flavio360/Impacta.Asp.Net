@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using POC.ADONET.MODELS;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace POC.ADONET.DAL
 {
@@ -19,9 +20,10 @@ namespace POC.ADONET.DAL
                 //se não cria uma
                 repoDB = new Repository();
             }
-
+            
+            var stringConnection = Repository.StringConnectar();
             //Atribui a string conexao no banco
-            //repoDB.Conn.ConnectionString = stringConnection;
+            repoDB.Conn.ConnectionString = stringConnection;
 
             //atribui a sqlconnection
 
@@ -81,6 +83,107 @@ namespace POC.ADONET.DAL
                 repoDB.fecharConexao(); 
             }
             return listaLivros;
+        }
+
+
+
+
+
+
+        //feito em casa
+
+        public bool AdcionaRegistro(int title_idVS,string titleVS, string typeVS, string pub_idVS, double priceVS,double advanceVS, int royaltyVS, int ytd_salesVS,string notesVS, string pubdateVs)
+        {
+            try
+            {
+                //verifica se a instancia é valida
+                CriarInstanciaRepoDB();
+                //COMANDO SQL
+                repoDB.Command.CommandText = @"INSERT INTO pubs.dbo.tabelaCloneTitles VALUES (@title_id,@title,@type,@pub_id,@price,@advance,@royalty,@ytd_sales,@notes,@pubdate)";
+
+
+                //substitui os valores
+                repoDB.Command.Parameters.AddWithValue("@title_id", title_idVS);
+                repoDB.Command.Parameters.AddWithValue("@title", titleVS);
+                repoDB.Command.Parameters.AddWithValue("@type", typeVS);
+                repoDB.Command.Parameters.AddWithValue("@pub_id", pub_idVS);
+                repoDB.Command.Parameters.AddWithValue("@price", priceVS);  
+                repoDB.Command.Parameters.AddWithValue("@advance", advanceVS);
+                repoDB.Command.Parameters.AddWithValue("@royalty", royaltyVS);
+                repoDB.Command.Parameters.AddWithValue("@ytd_sales", ytd_salesVS);
+                repoDB.Command.Parameters.AddWithValue("@notes", notesVS);
+                repoDB.Command.Parameters.AddWithValue("@pubdate", pubdateVs);
+
+                //ATRIBUIR PARA A PROPRIEDADE CONNECTION O OBJETO SQLCONNECTCTION JA INSTANCIADO.
+                repoDB.Command.Connection = repoDB.Conn;
+
+                //ABRE CONEXAO 
+                repoDB.OpenConnection();
+                //Conn.State == ConnectionState.Open)
+                //repoDB.fecharConexao();
+                bool valida = (repoDB.Conn.State == ConnectionState.Open ?true : false  );
+
+
+                //executar o isnert na base
+                var retorno = repoDB.Command.ExecuteNonQuery();
+
+                //executeNonQuery RETORNA O NUMER ODE LINHAS AFETADAS NO COMANDO
+                //IF TERNARRIO PARA RETORNAR BOLL INSERCAO
+                //se > 0 = true.
+                return (retorno > 0 ? true : false);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                repoDB.fecharConexao();
+            }
+        }
+
+
+
+
+
+
+
+        public bool AlteraRegistro(LivrosMOD livrosTeste)
+        {
+            int retorno = 0;
+            try
+            {
+                //método que instancia o repodb
+                CriarInstanciaRepoDB();
+
+                //comando para alterar 
+                repoDB.Command.CommandText = "update pubs.dbo.tabelaCloneTitles set notes = @notes, price = @price where title_id = @title_id";
+
+                //substituições e associações
+                repoDB.Command.Parameters.AddWithValue("@notes", livrosTeste.Resenha);
+                repoDB.Command.Parameters.AddWithValue("@price", livrosTeste.Preco);
+                repoDB.Command.Parameters.AddWithValue("@title_id", livrosTeste.Id);
+
+                if (repoDB.OpenConnection())
+                {
+                    retorno = repoDB.Command.ExecuteNonQuery();
+                }
+
+                repoDB.Conn.Close();
+                   
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                repoDB.fecharConexao();
+            }
+            return retorno == 0 ? false: true;
         }
     }
 }

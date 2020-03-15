@@ -9,7 +9,7 @@ namespace POC.TESTE.UNITARIO
     public class UnitTest1
     {
         [TestMethod]
-        public void TestaInsertNaTabelaCliente()
+        public void TestaInsertNRaTabelaCliente()
         {
             ClienteDAL clienteDAL = new ClienteDAL();
 
@@ -32,6 +32,7 @@ namespace POC.TESTE.UNITARIO
             //executa p select por id
             cliente = clienteDAL.selectById(1001);
 
+            //atribui dados para teste do udate.
             cliente.Nome = "TesteAlterar";
             cliente.Email = "EmailTeste";
             cliente.Observacao = "ObsTeste";
@@ -72,7 +73,10 @@ namespace POC.TESTE.UNITARIO
             Assert.IsTrue(clienteDAL.DeleteById(id));
         }
 
-   }
+
+
+       
+    }
 
 
 }

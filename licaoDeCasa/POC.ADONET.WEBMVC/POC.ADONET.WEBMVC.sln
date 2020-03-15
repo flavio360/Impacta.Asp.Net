@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2047
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.ADONET.WEBMVC", "POC.ADONET.WEBMVC\POC.ADONET.WEBMVC.csproj", "{BC492462-6CC3-49EB-AC24-0F1EF45B3665}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.ADONET.MODELS", "POC.ADONET.MODELS\POC.ADONET.MODELS.csproj", "{D4BD9130-FCE7-4B41-8790-9FF59FF23771}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.ADONET.BLL", "POC.ADONET.BLL\POC.ADONET.BLL.csproj", "{EF8BE854-C6A6-4268-B440-86AA7695F9D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteTestesPub", "TesteTestesPub\TesteTestesPub.csproj", "{42A25977-2A67-4BF3-8FE3-790B862B0577}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{EF8BE854-C6A6-4268-B440-86AA7695F9D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF8BE854-C6A6-4268-B440-86AA7695F9D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF8BE854-C6A6-4268-B440-86AA7695F9D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42A25977-2A67-4BF3-8FE3-790B862B0577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42A25977-2A67-4BF3-8FE3-790B862B0577}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42A25977-2A67-4BF3-8FE3-790B862B0577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42A25977-2A67-4BF3-8FE3-790B862B0577}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
