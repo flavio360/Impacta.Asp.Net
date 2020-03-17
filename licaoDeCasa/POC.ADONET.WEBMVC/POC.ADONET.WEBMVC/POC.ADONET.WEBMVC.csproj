@@ -193,6 +193,9 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\TodosLivros.cshtml" />
+    <Content Include="Views\Home\RegistraNovoLivro.cshtml" />
+    <Content Include="Views\Home\AltearLivro.cshtml" />
+    <Content Include="Views\Home\AtualizaLivro.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -215,6 +218,10 @@
     <ProjectReference Include="..\POC.ADONET.BLL\POC.ADONET.BLL.csproj">
       <Project>{ef8be854-c6a6-4268-b440-86aa7695f9d4}</Project>
       <Name>POC.ADONET.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POC.ADONET.DAL\POC.ADONET.DAL.csproj">
+      <Project>{146305c1-4257-4502-88a6-f739f4a8a72c}</Project>
+      <Name>POC.ADONET.DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\POC.ADONET.MODELS\POC.ADONET.MODELS.csproj">
       <Project>{d4bd9130-fce7-4b41-8790-9ff59ff23771}</Project>

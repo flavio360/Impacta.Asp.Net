@@ -1,0 +1,5 @@
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\POC.ADONET.WEBMVC\POC.ADONET.MODELS\bin\Debug\POC.ADONET.MODELS.dll
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\POC.ADONET.WEBMVC\POC.ADONET.MODELS\bin\Debug\POC.ADONET.MODELS.pdb
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\POC.ADONET.WEBMVC\POC.ADONET.MODELS\obj\Debug\POC.ADONET.MODELS.csprojAssemblyReference.cache
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\POC.ADONET.WEBMVC\POC.ADONET.MODELS\obj\Debug\POC.ADONET.MODELS.dll
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\POC.ADONET.WEBMVC\POC.ADONET.MODELS\obj\Debug\POC.ADONET.MODELS.pdb

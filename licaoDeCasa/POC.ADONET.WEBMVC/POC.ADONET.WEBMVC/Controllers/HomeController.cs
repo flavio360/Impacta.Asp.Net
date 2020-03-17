@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using POC.ADONET.BLL;
 using POC.ADONET.MODELS;
+using POC.ADONET.DAL;
 
 namespace POC.ADONET.WEBMVC.Controllers
 {
@@ -26,6 +27,7 @@ namespace POC.ADONET.WEBMVC.Controllers
             return View(lista);
         }
 
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -39,5 +41,43 @@ namespace POC.ADONET.WEBMVC.Controllers
 
             return View();
         }
+
+
+
+
+
+
+        //Pagina Estudo casa
+        public ActionResult RegistraNovoLivro()
+        {
+            return View("RegistraNovoLivro");
+        }
+
+        [HttpPost]
+
+        public ActionResult RegistraNovoLivro(LivrosMOD model)
+        {
+            LivrosDAL livros = new LivrosDAL();
+            livros.AdcionaRegistro(model);
+            return View();
+        }
+
+
+        [HttpGet]
+        public ActionResult AtualizaLivro(LivrosMOD model)
+        {
+            LivrosDAL livrosAlterar = new LivrosDAL();
+            livrosAlterar.AlteraRegistro(model);
+            return View();
+        }
+
+
+
+
+
+
+
+
+
     }
 }

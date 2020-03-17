@@ -1,0 +1,10 @@
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\POC.ADONET.WEBMVC\POC.ADONET.BLL\bin\Debug\POC.ADONET.BLL.dll
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\POC.ADONET.WEBMVC\POC.ADONET.BLL\bin\Debug\POC.ADONET.BLL.pdb
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\POC.ADONET.WEBMVC\POC.ADONET.BLL\bin\Debug\POC.ADONET.DAL.dll
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\POC.ADONET.WEBMVC\POC.ADONET.BLL\bin\Debug\POC.ADONET.MODELS.dll
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\POC.ADONET.WEBMVC\POC.ADONET.BLL\bin\Debug\POC.ADONET.DAL.pdb
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\POC.ADONET.WEBMVC\POC.ADONET.BLL\bin\Debug\POC.ADONET.MODELS.pdb
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\POC.ADONET.WEBMVC\POC.ADONET.BLL\obj\Debug\POC.ADONET.BLL.csprojAssemblyReference.cache
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\POC.ADONET.WEBMVC\POC.ADONET.BLL\obj\Debug\POC.ADONET.BLL.csproj.CopyComplete
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\POC.ADONET.WEBMVC\POC.ADONET.BLL\obj\Debug\POC.ADONET.BLL.dll
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\POC.ADONET.WEBMVC\POC.ADONET.BLL\obj\Debug\POC.ADONET.BLL.pdb

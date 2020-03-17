@@ -92,7 +92,8 @@ namespace POC.ADONET.DAL
 
         //feito em casa
 
-        public bool AdcionaRegistro(int title_idVS,string titleVS, string typeVS, string pub_idVS, double priceVS,double advanceVS, int royaltyVS, int ytd_salesVS,string notesVS, string pubdateVs)
+        public bool AdcionaRegistro(LivrosMOD model)
+        //public bool AdcionaRegistro(int title_idVS,string titleVS, string typeVS, string pub_idVS, double priceVS,double advanceVS, int royaltyVS, int ytd_salesVS,string notesVS, string pubdateVs)
         {
             try
             {
@@ -102,17 +103,29 @@ namespace POC.ADONET.DAL
                 repoDB.Command.CommandText = @"INSERT INTO pubs.dbo.tabelaCloneTitles VALUES (@title_id,@title,@type,@pub_id,@price,@advance,@royalty,@ytd_sales,@notes,@pubdate)";
 
 
+                // os valores
+                repoDB.Command.Parameters.AddWithValue("@title_id", model.Title_id);
+                repoDB.Command.Parameters.AddWithValue("@title", model.Titulo);
+                repoDB.Command.Parameters.AddWithValue("@type", model.Tipo);
+                repoDB.Command.Parameters.AddWithValue("@pub_id", model.Pub_id);
+                repoDB.Command.Parameters.AddWithValue("@price", model.Preco);
+                repoDB.Command.Parameters.AddWithValue("@advance", model.Advance);
+                repoDB.Command.Parameters.AddWithValue("@royalty", model.Royalty);
+                repoDB.Command.Parameters.AddWithValue("@ytd_sales", model.Ytd_Sales);
+                repoDB.Command.Parameters.AddWithValue("@notes", model.Resenha);
+                repoDB.Command.Parameters.AddWithValue("@pubdate", model.PubDate);
+
                 //substitui os valores
-                repoDB.Command.Parameters.AddWithValue("@title_id", title_idVS);
-                repoDB.Command.Parameters.AddWithValue("@title", titleVS);
-                repoDB.Command.Parameters.AddWithValue("@type", typeVS);
-                repoDB.Command.Parameters.AddWithValue("@pub_id", pub_idVS);
-                repoDB.Command.Parameters.AddWithValue("@price", priceVS);  
-                repoDB.Command.Parameters.AddWithValue("@advance", advanceVS);
-                repoDB.Command.Parameters.AddWithValue("@royalty", royaltyVS);
-                repoDB.Command.Parameters.AddWithValue("@ytd_sales", ytd_salesVS);
-                repoDB.Command.Parameters.AddWithValue("@notes", notesVS);
-                repoDB.Command.Parameters.AddWithValue("@pubdate", pubdateVs);
+                //repoDB.Command.Parameters.AddWithValue("@title_id", title_idVS);
+                //repoDB.Command.Parameters.AddWithValue("@title", titleVS);
+                //repoDB.Command.Parameters.AddWithValue("@type", typeVS);
+                //repoDB.Command.Parameters.AddWithValue("@pub_id", pub_idVS);
+                //repoDB.Command.Parameters.AddWithValue("@price", priceVS);  
+                //repoDB.Command.Parameters.AddWithValue("@advance", advanceVS);
+                //repoDB.Command.Parameters.AddWithValue("@royalty", royaltyVS);
+                //repoDB.Command.Parameters.AddWithValue("@ytd_sales", ytd_salesVS);
+                //repoDB.Command.Parameters.AddWithValue("@notes", notesVS);
+                //repoDB.Command.Parameters.AddWithValue("@pubdate", pubdateVs);
 
                 //ATRIBUIR PARA A PROPRIEDADE CONNECTION O OBJETO SQLCONNECTCTION JA INSTANCIADO.
                 repoDB.Command.Connection = repoDB.Conn;
