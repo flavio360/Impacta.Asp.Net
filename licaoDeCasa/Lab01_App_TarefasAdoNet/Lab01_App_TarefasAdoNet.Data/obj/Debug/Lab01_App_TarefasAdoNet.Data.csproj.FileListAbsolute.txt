@@ -1,0 +1,8 @@
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\Lab01_App_TarefasAdoNet\Lab01_App_TarefasAdoNet.Data\bin\Debug\Lab01_App_TarefasAdoNet.Data.dll
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\Lab01_App_TarefasAdoNet\Lab01_App_TarefasAdoNet.Data\bin\Debug\Lab01_App_TarefasAdoNet.Data.pdb
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\Lab01_App_TarefasAdoNet\Lab01_App_TarefasAdoNet.Data\bin\Debug\Lab01_App_TarefasAdoNet.Model.dll
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\Lab01_App_TarefasAdoNet\Lab01_App_TarefasAdoNet.Data\bin\Debug\Lab01_App_TarefasAdoNet.Model.pdb
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\Lab01_App_TarefasAdoNet\Lab01_App_TarefasAdoNet.Data\obj\Debug\Lab01_App_TarefasAdoNet.Data.csprojAssemblyReference.cache
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\Lab01_App_TarefasAdoNet\Lab01_App_TarefasAdoNet.Data\obj\Debug\Lab01_App_TarefasAdoNet.Data.csproj.CopyComplete
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\Lab01_App_TarefasAdoNet\Lab01_App_TarefasAdoNet.Data\obj\Debug\Lab01_App_TarefasAdoNet.Data.dll
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\Lab01_App_TarefasAdoNet\Lab01_App_TarefasAdoNet.Data\obj\Debug\Lab01_App_TarefasAdoNet.Data.pdb

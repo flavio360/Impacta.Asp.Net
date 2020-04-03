@@ -1,0 +1,4 @@
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\Lab01_App_TarefasAdoNet\Lab01.Models\bin\Debug\Lab01.Models.dll
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\Lab01_App_TarefasAdoNet\Lab01.Models\bin\Debug\Lab01.Models.pdb
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\Lab01_App_TarefasAdoNet\Lab01.Models\obj\Debug\Lab01.Models.dll
+C:\Users\flavio\Documents\ASP.NET\Impacta.Asp.Net\licaoDeCasa\Lab01_App_TarefasAdoNet\Lab01.Models\obj\Debug\Lab01.Models.pdb

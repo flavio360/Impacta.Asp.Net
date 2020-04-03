@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Lab01_App_TarefasAdoNet.Models.Tarefas>
+@*@model Lab01_App_TarefasAdoNet.Models.Tarefas*@
+
+@{
+    ViewBag.Title = "Lista De Tarefa";
+}
+
+<h2>Lista De Tarefa</h2>
+
+<p>
+    @Html.ActionLink("Nova Tarefa", "NovaTarefa",null, new { @class = "btn btn-primary"})
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Prioridade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Concluida)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Obs)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Prioridade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Concluida)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Obs)
+        </td>
+        <td>
+            @Html.ActionLink("Editar Tarefa", "EditarTarefa", new { id=item.Id }, new { @class = "btn btn-primary"}) 
+            @Html.ActionLink("Detalhe da Tarefa", "DetalheTarefa", new { id=item.Id }, new { @class = "btn btn-primary"}) 
+            @Html.ActionLink("Excluir Tarefa", "ExcluirTarefa", new { id=item.Id }, new { @class = "btn btn-primary"})
+        </td>
+    </tr>
+}
+
+</table>
