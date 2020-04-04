@@ -1,0 +1,8 @@
+C:\Users\flavio\Documents\ASP.NET\ParaAula\ControleDeTarefas\ControleDeTarefas.Data\bin\Debug\ControleDeTarefas.Data.dll
+C:\Users\flavio\Documents\ASP.NET\ParaAula\ControleDeTarefas\ControleDeTarefas.Data\bin\Debug\ControleDeTarefas.Data.pdb
+C:\Users\flavio\Documents\ASP.NET\ParaAula\ControleDeTarefas\ControleDeTarefas.Data\bin\Debug\ControleDeTarefas.Model.dll
+C:\Users\flavio\Documents\ASP.NET\ParaAula\ControleDeTarefas\ControleDeTarefas.Data\bin\Debug\ControleDeTarefas.Model.pdb
+C:\Users\flavio\Documents\ASP.NET\ParaAula\ControleDeTarefas\ControleDeTarefas.Data\obj\Debug\ControleDeTarefas.Data.csprojAssemblyReference.cache
+C:\Users\flavio\Documents\ASP.NET\ParaAula\ControleDeTarefas\ControleDeTarefas.Data\obj\Debug\ControleDeTarefas.Data.csproj.CopyComplete
+C:\Users\flavio\Documents\ASP.NET\ParaAula\ControleDeTarefas\ControleDeTarefas.Data\obj\Debug\ControleDeTarefas.Data.dll
+C:\Users\flavio\Documents\ASP.NET\ParaAula\ControleDeTarefas\ControleDeTarefas.Data\obj\Debug\ControleDeTarefas.Data.pdb

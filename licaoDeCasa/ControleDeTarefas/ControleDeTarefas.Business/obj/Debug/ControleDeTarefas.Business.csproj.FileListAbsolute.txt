@@ -1,0 +1,10 @@
+C:\Users\flavio\Documents\ASP.NET\ParaAula\ControleDeTarefas\ControleDeTarefas.Business\bin\Debug\ControleDeTarefas.Business.dll
+C:\Users\flavio\Documents\ASP.NET\ParaAula\ControleDeTarefas\ControleDeTarefas.Business\bin\Debug\ControleDeTarefas.Business.pdb
+C:\Users\flavio\Documents\ASP.NET\ParaAula\ControleDeTarefas\ControleDeTarefas.Business\bin\Debug\ControleDeTarefas.Data.dll
+C:\Users\flavio\Documents\ASP.NET\ParaAula\ControleDeTarefas\ControleDeTarefas.Business\bin\Debug\ControleDeTarefas.Model.dll
+C:\Users\flavio\Documents\ASP.NET\ParaAula\ControleDeTarefas\ControleDeTarefas.Business\bin\Debug\ControleDeTarefas.Data.pdb
+C:\Users\flavio\Documents\ASP.NET\ParaAula\ControleDeTarefas\ControleDeTarefas.Business\bin\Debug\ControleDeTarefas.Model.pdb
+C:\Users\flavio\Documents\ASP.NET\ParaAula\ControleDeTarefas\ControleDeTarefas.Business\obj\Debug\ControleDeTarefas.Business.csprojAssemblyReference.cache
+C:\Users\flavio\Documents\ASP.NET\ParaAula\ControleDeTarefas\ControleDeTarefas.Business\obj\Debug\ControleDeTarefas.Business.csproj.CopyComplete
+C:\Users\flavio\Documents\ASP.NET\ParaAula\ControleDeTarefas\ControleDeTarefas.Business\obj\Debug\ControleDeTarefas.Business.dll
+C:\Users\flavio\Documents\ASP.NET\ParaAula\ControleDeTarefas\ControleDeTarefas.Business\obj\Debug\ControleDeTarefas.Business.pdb

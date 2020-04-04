@@ -1,0 +1,4 @@
+C:\Users\flavio\Documents\ASP.NET\ParaAula\ControleDeTarefas\ControleDeTarefas.Model\bin\Debug\ControleDeTarefas.Model.dll
+C:\Users\flavio\Documents\ASP.NET\ParaAula\ControleDeTarefas\ControleDeTarefas.Model\bin\Debug\ControleDeTarefas.Model.pdb
+C:\Users\flavio\Documents\ASP.NET\ParaAula\ControleDeTarefas\ControleDeTarefas.Model\obj\Debug\ControleDeTarefas.Model.dll
+C:\Users\flavio\Documents\ASP.NET\ParaAula\ControleDeTarefas\ControleDeTarefas.Model\obj\Debug\ControleDeTarefas.Model.pdb
